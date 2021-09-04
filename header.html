@@ -1,0 +1,411 @@
+<html lang="en">
+<head>
+<title>Pathway</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="pathway/icon.png" />
+
+<link rel="stylesheet" href="new_add/animate.css">
+<link rel="stylesheet" href="new_add/bootstrap.min.css">
+<link rel="stylesheet" href="new_add/bootsnav.css">
+
+<link rel="stylesheet" href="path_css/font-awesome.css">
+<link rel="stylesheet" href="owl/owl.carousel.min.css">
+<link rel="stylesheet" href="owl/owl.theme.default.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+ -->
+
+<link rel="stylesheet" type="text/css" href="path_css/consult.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+
+<script src="new_add/bootstrap.min.js"></script>
+<script src="new_add/bootsnav.js"></script>
+
+
+
+
+<style type="text/css">
+
+
+
+  .carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+  
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 2.5em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+.hero p {
+    font-size: 1.0em;    
+    text-shadow: none;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+    width:100%;        
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+ background-image: url(pathway/banner_2.png);
+}
+.fade-carousel .slides .slide-2 {
+ background-image: url(pathway/banner_1.png);
+}
+.fade-carousel .slides .slide-3 {
+ background-image: url(pathway/app_develop.png);
+}
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 2.5em; }
+    .hero p { font-size: 1em; line-height:3rem }    
+
+.fade-carousel .slides .slide-1 {
+  background-position: top left 12%;
+}
+.fade-carousel .slides .slide-2 {
+  background-position: top left 12%;
+}
+
+.fade-carousel .slides .slide-3{
+ background-position: top left 30%;
+}
+
+}
+
+
+
+@media(min-width:768px){
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(50px) !important;
+    -ms-transform: translateY(50px) !important;
+    transform: translateY(50px) !important;
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 3.5rem;
+    height: .7rem;
+    margin:0 5px;
+
+}    
+
+
+.carousel-indicators li.active{
+
+display: inline-block;
+width: 3.5rem;
+height: .7rem;
+
+
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+
+  background:-webkit-linear-gradient(to bottom,#f4f4fa,#e6f9ff);
+  background:-ms-linear-gradient(to bottom,#f4f4fa,#e6f9ff);
+  background:-moz-linear-gradient(to bottom,#f4f4fa,#e6f9ff);
+  background:-o-linear-gradient(to bottom,#f4f4fa,#e6f9ff);
+  background:linear-gradient(to bottom,#f4f4fa,#e6f9ff);
+
+}
+
+
+@media(min-width:1024px){
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+
+  border-left: solid 1px #8282821f;
+  border-right: solid 1px #8282821f;
+
+}
+
+}
+
+
+@media(max-width:767px){
+
+nav.navbar.bootsnav ul.nav > li > a {
+
+    padding: 0.8rem 1.5rem;
+    margin: 0 0rem;
+} 
+
+}
+
+
+</style>
+
+</head>
+<body style="overflow-x: hidden;">
+<section id="topheader">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-default bootsnav">
+
+        <div class="container-fluid widtajust">            
+           
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#brand"><img src="pathway/logo.png" class="logo" alt="" style="width:128px; padding:0.8rem"></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active"><a href="index.php">Home</a></li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-4">
+                                        <h5 class="title"><b>Web Design & Development</b></h5>
+                                        <div class="content">
+                                         <ul class="menu-col">
+                                                <li><a href="web_applecation.php">Web Application Development</a></li>
+                                                <li><a href="ecommerce.php">Ecommerce Website Development</a></li>
+                                                <li><a href="contact_management.php">Content Management System</a></li>
+                                                <li><a href="#">CRM Application Development</a></li>
+                                                <li><a href="#">ERP School Management System</a></li>
+                                                <li><a href="#">API Integration</a></li>
+                                                <!-- <li><a href="#">AngularJS Development</a></li>
+                                                <li><a href="#">Nodejs Development</a></li>
+                                                <li><a href="#">.Net Development</a></li>
+                                                <li><a href="#">Java Website Development</a></li>
+                                                <li><a href="#">Python Web Application</a></li>
+                                                <li><a href="#">PHP Website Development</a></li>
+                                                <li><a href="#">Laravel Website Development</a></li> -->
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-4">
+                                        <h5 class="title"><b>App Development</b></h5>
+                                        <div class="content">
+                                              <ul class="menu-col">
+                                                <li><a href="#">Hybrid App Development</a></li>
+                                                <li><a href="#">React Native App Development</a></li>
+                                                <li><a href="#">Android App Development</a></li>
+                                                <li><a href="#">iOS App Development</a></li>
+                                                <!-- <li><a href="#">Dating App Development</a></li> -->
+                                                <li><a href="#">Machine Learning Development</a></li>
+                                               <!--  <li><a href="#">Html5 Mobile App Development</a></li>
+                                                <li><a href="#">Real Estate Portal Development</a></li> -->
+                                               
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-4">
+                                        <h5 class="title"><b>Digital Marketing</b></h5>
+                                        <div class="content">
+                                                 <ul class="menu-col">
+                                                <li><a href="#">Search Engine Optimization</a></li>
+                                                <li><a href="#">Social Media Optimization</a></li>
+                                                <li><a href="#">Digital Marketing Services</a></li>
+                                                <li><a href="#">Pay Per Click</a></li>
+                                               <!--  <li><a href="#">Content Marketing</a></li>
+                                                <li><a href="#">Internet Marketing</a></li>
+
+                                                <li><a href="#">Bulk SMS Services</a></li>
+                                                <li><a href="#">Website Optimization & Testing</a></li>
+                                                <li><a href="#">Job Web Portal Development</a></li>
+                                                <li><a href="#">Tour and Travel Web Development</a></li> -->
+                                                <li><a href="#">B2B Web Portal Development</a></li>
+<!-- 
+                                                <li><a href="#">Hotel Booking Web Development</a></li>
+                                                <li><a href="#">Hospital Web Portal Development</a></li> -->
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>    
+                                
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT Consulting</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <h5 class="title"><b>Permanent Placement Recruitment (PPR)</b></h5>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <!--<li><a href="#">Our recruitment consultants follow a client-based strategy to search for and make available the job-ready talent, thereby cutting your cost on recruitment process.</a></li>-->
+                                                
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h5 class="title"><b>Contract Placement Recruitment (CPR)</b></h5>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Our CPR is just the solution you need for a temporary job without running up huge expenses on employment formalities.</a></li>
+                                              
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h5 class="title"><b>Outsourcing (O)</b></h5>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">We also conduct outsourcing a business practice in which certain talent acquisition functions required by the business are performed on a contract basis</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>    
+                                    <div class="col-menu col-md-3">
+                                        <h5 class="title"><b>HR Advisory (HA)</b></h5>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="#">Our HR advisory services help you improve operational & organizational activities by putting right people with right capability at right costs doing the right thing.u</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+                     <li class="dropdown megamenu-fw">
+
+		<li><a href="https://www.aenyvish.com/">Content & Publishing</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                   
+                     <li><a href="#" class="getTouching">Get In Touch</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>   
+
+    </nav>
+</section>

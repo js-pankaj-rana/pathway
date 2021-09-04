@@ -1,0 +1,211 @@
+
+<section id="footer">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-4">
+        <h4>Useful link</h4>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About us</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact us</a></li>
+          
+        </ul>
+      </div>  
+      <div class="col-md-3 col-xs-4">
+        <h4>Need Help?</h4>
+        <ul>
+          <li><a href="#">Faqs</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Teams</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-xs-4">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa fa-globe"></i> Location</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <h4>GET IN TOUCH</h4> 
+        <div class="send_area">
+           <div class="input-group">
+            <input type="email" class="form-control" placeholder="email">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-send"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi veniam laborum aspernatur.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</div>
+<!---script area don't touch---->
+
+<script type="text/javascript">
+  
+$('.carousel').carousel()
+
+
+</script>
+
+<script>
+  
+$(function(){
+
+$('#services_area .col-md-4').hover(function(){
+
+  $(this).addClass('activating').siblings().removeClass('activating');
+    
+});
+
+});
+
+</script>
+
+<!---client--->
+
+<script>
+  
+$('#client_multy').owlCarousel({
+  autoplay:true,
+  autoplaySpeed:1000,
+  margin:30,
+  center:true,
+  loop:true,
+  nav:true,
+  dots:false,
+  responsive:{
+
+    1000:{
+      items:3
+    },
+    600:{
+      items:2,
+      margin:15
+    },
+    400:{
+      items:2,
+      margin:15,
+      center:false
+    },
+    300:{
+      items:2,
+      margin:15,
+      center:false
+  
+    },
+
+  }
+});
+
+</script>
+
+
+<!---client section--->
+
+<script>
+
+$('#project_view').owlCarousel({
+  autoplay:true,
+  autoplaySpeed:1000,
+  margin:15,
+  center:true,
+  loop:true,
+  nav:true,
+  dots:false,
+  responsive:{
+
+    1000:{
+      items:5
+    },
+    600:{
+      items:4,
+      margin:15
+    },
+    400:{
+      items:3,
+      margin:15
+    },
+    300:{
+      items:3
+    },
+
+  }
+});
+
+</script>
+
+<!-- navbar_code -->
+
+<script type="text/javascript">
+  
+$(function(){
+
+  // $('.navbar-toggler').click(function(){
+
+  // // $('#navbarSupportedContent').slideToggle('activating');
+
+  // })
+$('.dropdown-toggle').click(function(){
+
+  $(this).toggleClass('change');
+
+})  
+
+});
+
+</script>
+
+<script>
+  
+
+$(function(){
+
+  $(window).scroll(function(){
+
+    if($(this).scrollTop()>=10){
+
+      $('#topheader').addClass('sticksec');
+
+    }
+    else{
+    
+      $('#topheader').removeClass('sticksec');
+
+    }
+
+  })
+
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+  
+$('.carousel').carousel({
+  interval: 2000,
+  pause: true
+})
+
+</script>
+
+</body>
+</html>
