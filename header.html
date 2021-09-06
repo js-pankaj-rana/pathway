@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="new_add/animate.css">
 <link rel="stylesheet" href="new_add/bootstrap.min.css">
 <link rel="stylesheet" href="new_add/bootsnav.css">
+<link rel="stylesheet" href="path_css/navigation.css" />
 
 <link rel="stylesheet" href="path_css/font-awesome.css">
 <link rel="stylesheet" href="owl/owl.carousel.min.css">
@@ -17,7 +18,9 @@
 
 <link rel="stylesheet" type="text/css" href="path_css/consult.css">
 
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="owl/owl.carousel.min.js"></script>
 
@@ -282,22 +285,68 @@ nav.navbar.bootsnav ul.nav > li > a {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="active"><a href="index.php">Home</a></li>
-                    <li class="dropdown megamenu-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technology</a>
-                        <ul class="dropdown-menu megamenu-content" role="menu">
-                            <li>
+                    <li class="active"><a href="index.php">
+                        <span class="menu-level-1">
+                            <span class="lebel-text">
+                                Home        
+                            </span>
+                        </span>
+                    </a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="menu-level-1">
+                                <span class="lebel-text">
+                                    Technology
+                                </span>
+                            </span></a>
+                        <div class="mega-menu-level-2" role="menu">
                                 <div class="row">
                                     <div class="col-menu col-md-4">
-                                        <h5 class="title"><b>Web Design & Development</b></h5>
+                                        <h5 class="title">Web Design & Development</h5>
                                         <div class="content">
                                          <ul class="menu-col">
-                                                <li><a href="web_applecation.php">Web Application Development</a></li>
-                                                <li><a href="ecommerce.php">Ecommerce Website Development</a></li>
-                                                <li><a href="contact_management.php">Content Management System</a></li>
-                                                <li><a href="#">CRM Application Development</a></li>
-                                                <li><a href="#">ERP School Management System</a></li>
-                                                <li><a href="#">API Integration</a></li>
+                                                <li><a href="web_applecation.php">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Web Application Development
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="ecommerce.php">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Ecommerce Website Development
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="contact_management.php">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Content Management System
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            CRM Application Development
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            ERP School Management System
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            API Integration
+                                                        </span>
+                                                    </span>
+                                                </a></li>
                                                 <!-- <li><a href="#">AngularJS Development</a></li>
                                                 <li><a href="#">Nodejs Development</a></li>
                                                 <li><a href="#">.Net Development</a></li>
@@ -309,15 +358,45 @@ nav.navbar.bootsnav ul.nav > li > a {
                                         </div>
                                     </div><!-- end col-3 -->
                                     <div class="col-menu col-md-4">
-                                        <h5 class="title"><b>App Development</b></h5>
+                                        <h5 class="title">App Development</h5>
                                         <div class="content">
                                               <ul class="menu-col">
-                                                <li><a href="#">Hybrid App Development</a></li>
-                                                <li><a href="#">React Native App Development</a></li>
-                                                <li><a href="#">Android App Development</a></li>
-                                                <li><a href="#">iOS App Development</a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Hybrid App Development        
+                                                        </span>
+                                                    </span>
+                                                    </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            React Native App Development        
+                                                        </span>
+                                                    </span>
+                                                    </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Android App Development            
+                                                        </span>
+                                                    </span>
+                                                </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            iOS App Development            
+                                                        </span>
+                                                    </span>
+                                                </a></li>
                                                 <!-- <li><a href="#">Dating App Development</a></li> -->
-                                                <li><a href="#">Machine Learning Development</a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Machine Learning Development            
+                                                        </span>
+                                                    </span>
+                                                </a></li>
                                                <!--  <li><a href="#">Html5 Mobile App Development</a></li>
                                                 <li><a href="#">Real Estate Portal Development</a></li> -->
                                                
@@ -328,10 +407,36 @@ nav.navbar.bootsnav ul.nav > li > a {
                                         <h5 class="title"><b>Digital Marketing</b></h5>
                                         <div class="content">
                                                  <ul class="menu-col">
-                                                <li><a href="#">Search Engine Optimization</a></li>
-                                                <li><a href="#">Social Media Optimization</a></li>
-                                                <li><a href="#">Digital Marketing Services</a></li>
-                                                <li><a href="#">Pay Per Click</a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Search Engine Optimization        
+                                                        </span>
+                                                    </span>
+                                                    </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Social Media Optimization        
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Digital Marketing Services        
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    </a></li>
+                                                <li><a href="#">
+                                                    <span class="menu-level-2">
+                                                        <span class="lebel-text">
+                                                            Pay Per Click        
+                                                        </span>
+                                                    </span>
+                                                    </a></li>
                                                <!--  <li><a href="#">Content Marketing</a></li>
                                                 <li><a href="#">Internet Marketing</a></li>
 
@@ -339,7 +444,12 @@ nav.navbar.bootsnav ul.nav > li > a {
                                                 <li><a href="#">Website Optimization & Testing</a></li>
                                                 <li><a href="#">Job Web Portal Development</a></li>
                                                 <li><a href="#">Tour and Travel Web Development</a></li> -->
-                                                <li><a href="#">B2B Web Portal Development</a></li>
+                                                <li><a href="#"><span class="menu-level-2">
+                                                    <span class="lebel-text">
+                                                        B2B Web Portal Development            
+                                                    </span>
+                                                </span>
+                                                </a></li>
 <!-- 
                                                 <li><a href="#">Hotel Booking Web Development</a></li>
                                                 <li><a href="#">Hospital Web Portal Development</a></li> -->
@@ -349,60 +459,65 @@ nav.navbar.bootsnav ul.nav > li > a {
                                     </div>    
                                 
                                 </div><!-- end row -->
-                            </li>
-                        </ul>
+                        </div>
                     </li>
-                    <li class="dropdown megamenu-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IT Consulting</a>
-                        <ul class="dropdown-menu megamenu-content" role="menu">
-                            <li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="menu-level-1">
+                                <span class="lebel-text">
+                                    IT Consulting
+                                </span>
+                            </span>
+                        </a>
+                        <div class="mega-menu-level-2 content-info" role="menu">
                                 <div class="row">
-                                    <div class="col-menu col-md-3">
+                                    <!--<div class="col-menu col-md-3">
                                         <h5 class="title"><b>Permanent Placement Recruitment (PPR)</b></h5>
                                         <div class="content">
-                                            <ul class="menu-col">
+                                            <ul class="menu-col">-->
                                                 <!--<li><a href="#">Our recruitment consultants follow a client-based strategy to search for and make available the job-ready talent, thereby cutting your cost on recruitment process.</a></li>-->
                                                 
-                                            </ul>
+                                          <!--  </ul>
                                         </div>
-                                    </div><!-- end col-3 -->
-                                    <div class="col-menu col-md-3">
-                                        <h5 class="title"><b>Contract Placement Recruitment (CPR)</b></h5>
+                                    </div>-->
+                                    <!-- end col-3 -->
+                                    <div class="col-menu col-md-4">
+                                        <h5 class="title">Contract Placement Recruitment (CPR)></h5>
                                         <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="#">Our CPR is just the solution you need for a temporary job without running up huge expenses on employment formalities.</a></li>
-                                              
-                                            </ul>
+                                            Our CPR is just the solution you need for a temporary job without running up huge expenses on employment formalities.
                                         </div>
                                     </div><!-- end col-3 -->
-                                    <div class="col-menu col-md-3">
+                                    <div class="col-menu col-md-4">
                                         <h5 class="title"><b>Outsourcing (O)</b></h5>
                                         <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="#">We also conduct outsourcing a business practice in which certain talent acquisition functions required by the business are performed on a contract basis</a></li>
-                                                
-                                            </ul>
+                                            We also conduct outsourcing a business practice in which certain talent acquisition functions required by the business are performed on a contract basis
                                         </div>
                                     </div>    
-                                    <div class="col-menu col-md-3">
+                                    <div class="col-menu col-md-4">
                                         <h5 class="title"><b>HR Advisory (HA)</b></h5>
                                         <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="#">Our HR advisory services help you improve operational & organizational activities by putting right people with right capability at right costs doing the right thing.u</a></li>
-                                                
-                                            </ul>
+                                            Our HR advisory services help you improve operational & organizational activities by putting right people with right capability at right costs doing the right thing.
                                         </div>
                                     </div><!-- end col-3 -->
                                 </div><!-- end row -->
-                            </li>
-                        </ul>
+                        </div>
                     </li>
-                     <li class="dropdown megamenu-fw">
 
-		<li><a href="https://www.aenyvish.com/">Content & Publishing</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                   
-                     <li><a href="#" class="getTouching">Get In Touch</a></li>
+		        <li><a href="https://www.aenyvish.com/">
+                    <span class="menu-level-1">
+                        <span class="lebel-text">
+                            Content & Publishing
+                        </span>
+                    </span>
+                </a></li>
+                <li><a href="about.php">
+                    <span class="menu-level-1">
+                        <span class="lebel-text">
+                            About Us
+                        </span>
+                    </span>
+                </a></li>
+                <!-- <li><a href="#" class="getTouching">Get In Touch</a></li> -->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>   
